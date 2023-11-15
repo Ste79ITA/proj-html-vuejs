@@ -45,7 +45,13 @@ export default {
 
 .header {
   @include centered-flex;
+  position: fixed;
+  width: 100vw;
   padding: 5px 0px;
+  cursor: pointer;
+  border-bottom: 2px solid $grey-color;
+  background-color: $white-color;
+  z-index: 10;
 
   .logo {
     width: 195px;

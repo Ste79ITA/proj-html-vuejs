@@ -22,8 +22,4 @@ export default {
 <style lang="scss">
 @use './style/_general.scss' as *;
 @use './style/_mixins.scss' as *;
-
-.test {
-  @include flex;
-}
 </style>
