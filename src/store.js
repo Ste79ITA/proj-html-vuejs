@@ -1,5 +1,13 @@
 import { reactive } from 'vue';
 
 export const store = reactive({
-  test: {},
+  headerNav: [
+    'Home',
+    'About Us',
+    'Vehicles',
+    'Dealers',
+    'Packages',
+    'Blog',
+    'Contact',
+  ],
 });
