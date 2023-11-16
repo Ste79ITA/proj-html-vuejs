@@ -42,10 +42,41 @@ export default {
             <option value="Status">Status</option>
           </select>
         </div>
-        <div class="card-search">Search</div>
+        <div class="card-button">Search</div>
       </div>
-      <div class="categories"></div>
-      <div class="results"></div>
+      <div class="categories">
+        <div class="card">
+          <img src="/3-search/category/1-cabrio.jpg" alt="" />
+          <p class="model">Cabrio</p>
+          <p class="listing">3 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/category/2-coupe.jpg" alt="" />
+          <p class="model">Coupe</p>
+          <p class="listing">0 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/category/3-hatchback.jpg" alt="" />
+          <p class="model">Hatchback</p>
+          <p class="listing">2 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/category/4-pickup.jpg" alt="" />
+          <p class="model">Pick Up</p>
+          <p class="listing">0 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/category/5-sedan.jpg" alt="" />
+          <p class="model">Sedan</p>
+          <p class="listing">3 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/category/6-suv.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+      </div>
+      <div class="results">TEST</div>
     </div>
   </div>
 </template>
@@ -64,7 +95,6 @@ export default {
     padding-top: 17px;
   }
   .search-bar {
-    border: 1px solid orange;
     width: 100%;
     @include flex;
     align-items: center;
@@ -80,10 +110,10 @@ export default {
         border: 1px solid $grey-color;
         border-radius: 5px;
         width: 160px;
-        color: rgb(105, 105, 105);
+        color: $darkGrey-color;
       }
     }
-    .card-search {
+    .card-button {
       border: 1px solid $grey-color;
       padding: 25px 30px;
       border-radius: 5px;
@@ -91,6 +121,38 @@ export default {
       background-color: $black-color;
       cursor: pointer;
     }
+  }
+  .categories {
+    @include flex;
+    justify-content: center;
+
+    .card {
+      text-align: center;
+      color: $darkGrey-color;
+      box-shadow: 0px 0px 4px 4px rgba(170, 170, 170, 0.1);
+      width: calc((100% / 6) - 4px);
+      &:not(:first-child) {
+        margin-left: 4px;
+        border-radius: 2px;
+      }
+
+      img {
+        width: 100%;
+      }
+      .model {
+        margin-top: 10px;
+        margin-bottom: 6px;
+        font-size: 17px;
+      }
+      .listing {
+        font-size: 11px;
+        padding-bottom: 17px;
+      }
+    }
+  }
+  .results {
+    border: 1px solid orange;
+    height: 780px;
   }
 }
 </style>
