@@ -76,7 +76,48 @@ export default {
           <p class="listing">4 Listing</p>
         </div>
       </div>
-      <div class="results">TEST</div>
+      <div class="results">
+        <div class="card">
+          <img src="/3-search/results/car-1.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/results/car-2.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/results/car-3.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/results/car-4.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/results/car-1.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/results/car-2.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/results/car-3.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+        <div class="card">
+          <img src="/3-search/results/car-4.jpg" alt="" />
+          <p class="model">SUV</p>
+          <p class="listing">4 Listing</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -91,7 +132,7 @@ export default {
   width: 100%;
 
   .container {
-    width: 1451px;
+    width: 1450px;
     padding-top: 17px;
   }
   .search-bar {
@@ -129,12 +170,9 @@ export default {
     .card {
       text-align: center;
       color: $darkGrey-color;
-      box-shadow: 0px 0px 4px 4px rgba(170, 170, 170, 0.1);
-      width: calc((100% / 6) - 4px);
-      &:not(:first-child) {
-        margin-left: 4px;
-        border-radius: 2px;
-      }
+      box-shadow: 0px 0px 4px 4px $shadow-color;
+      width: calc(100% / 6);
+      border-radius: 2px;
 
       img {
         width: 100%;
@@ -151,8 +189,21 @@ export default {
     }
   }
   .results {
-    border: 1px solid orange;
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid orange;
     height: 780px;
+    margin-top: 26px;
+
+    .card {
+      width: calc((100%) / 4);
+      box-shadow: 0px 0px 4px 4px $shadow-color;
+      border-radius: 2px;
+      height: 376px;
+      padding: 14px 21px;
+    }
   }
 }
 </style>
