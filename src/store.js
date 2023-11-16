@@ -10,4 +10,23 @@ export const store = reactive({
     'Blog',
     'Contact',
   ],
+  footerNav: {
+    account: [
+      'My Account',
+      '- My Account',
+      '- Checkout',
+      '- Cart',
+      '- Packages',
+      '- Add Car',
+    ],
+
+    links: [
+      'Quick Links',
+      '- Home',
+      '- About Us',
+      '- Blog',
+      '- Contact',
+      '- Refund & Returns',
+    ],
+  },
 });

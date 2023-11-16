@@ -1,9 +1,19 @@
 <script>
+import { store } from '../store.js';
+
 export default {
   data() {
-    return {};
+    return { store };
   },
   components: {},
+  computed: {
+    account: function () {
+      return store.footerNav.account;
+    },
+    links: function () {
+      return store.footerNav.links;
+    },
+  },
 };
 </script>
 
@@ -61,22 +71,12 @@ export default {
       </div>
       <div class="account">
         <ul>
-          <li><h1>My Account</h1></li>
-          <li><span>-</span> My Account</li>
-          <li><span>-</span> Checkout</li>
-          <li><span>-</span> Cart</li>
-          <li><span>-</span> Packages</li>
-          <li><span>-</span> Add Car</li>
+          <li v-for="(item, i) in account" :key="i">{{ account[i] }}</li>
         </ul>
       </div>
       <div class="links">
         <ul>
-          <li><h1>Quick Links</h1></li>
-          <li><span>-</span> Home</li>
-          <li><span>-</span> About Us</li>
-          <li><span>-</span> Blog</li>
-          <li><span>-</span> Contact</li>
-          <li><span>-</span> Refund & Returns</li>
+          <li v-for="(item, i) in links" :key="i">{{ links[i] }}</li>
         </ul>
       </div>
     </div>
@@ -113,21 +113,24 @@ export default {
       @include flex;
       flex-direction: column;
       align-items: start;
-      gap: 20px;
+      gap: 5px;
 
       li {
         font-size: 17px;
         color: $grey-color;
-        span {
-          font-weight: bold;
-          font-size: 20px;
-          color: $white-color;
-        }
       }
 
-      h1 {
+      li:not(:first-child)::first-letter {
+        color: $white-color;
+        font-size: 30px;
+        margin-right: 5px;
+      }
+
+      li:first-child {
         font-size: 26px;
         color: $white-color;
+        font-weight: bold;
+        margin-bottom: 10px;
       }
     }
   }
@@ -151,6 +154,13 @@ export default {
     }
     ul {
       gap: 30px;
+
+      li:first-child {
+        color: $grey-color;
+        font-size: 17px;
+        font-weight: 100;
+        margin-bottom: 0;
+      }
     }
     .icon {
       color: $grey-color;
@@ -172,11 +182,16 @@ export default {
     h1 {
       font-size: 26px;
     }
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: $grey-color;
+    }
     .form-mail,
     .form-subscribe {
       border-radius: 5px;
-      line-height: 3em;
-      width: 100%;
+      line-height: 70px;
+      width: 453px;
       padding-left: 20px;
       border: 1px solid white;
       color: $grey-color;
@@ -186,12 +201,11 @@ export default {
       text-align: center;
       margin-top: 5px;
       cursor: pointer;
-      line-height: 2.6em;
     }
 
     .copyright {
-      margin-top: 110px;
-      margin-right: -40px;
+      margin-top: 160px;
+      margin-right: -100px;
       align-self: self-end;
     }
   }
