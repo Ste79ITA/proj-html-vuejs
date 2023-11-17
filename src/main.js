@@ -12,6 +12,11 @@ import {
   faLocationDot,
   faPhoneVolume,
   faEnvelope,
+  faCircleCheck,
+  faDollarSign,
+  faCar,
+  faGasPump,
+  faHeart,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookF,
@@ -27,6 +32,11 @@ library.add(
   faLocationDot,
   faPhoneVolume,
   faEnvelope,
+  faCircleCheck,
+  faDollarSign,
+  faCar,
+  faGasPump,
+  faHeart,
   faInstagram,
   faTwitter
 );
