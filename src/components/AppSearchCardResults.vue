@@ -37,6 +37,7 @@ export default {
         </div>
       </div>
     </div>
+    <div class="show-all">Show All Cars &rarr;</div>
   </div>
 </template>
 
@@ -49,14 +50,14 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 780px;
+  // height: 780px;
   margin-top: 26px;
+  row-gap: 20px;
 
   .card {
     width: calc((100%) / 4);
     box-shadow: 0px 0px 4px 4px $shadow-color;
     border-radius: 2px;
-    height: 376px;
     padding: 14px 21px;
 
     .content {
@@ -73,8 +74,19 @@ export default {
       .favorite {
         margin-left: auto;
         color: $grey-color;
+        cursor: pointer;
       }
     }
   }
+}
+
+.show-all {
+  color: $white-color;
+  background-color: $black-color;
+  border-radius: 5px;
+  line-height: 67px;
+  padding: 0 53px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 </style>

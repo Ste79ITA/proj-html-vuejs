@@ -38,6 +38,7 @@ export default {
     box-shadow: 0px 0px 4px 4px $shadow-color;
     width: calc(100% / 6);
     border-radius: 2px;
+    cursor: pointer;
 
     img {
       width: 100%;

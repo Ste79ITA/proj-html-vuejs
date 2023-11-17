@@ -31,7 +31,7 @@ export default {
 
 .search {
   background-color: $white-color;
-  height: 1270px;
+  // height: 1270px;
   width: 100%;
 
   .container {
