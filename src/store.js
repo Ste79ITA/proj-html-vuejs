@@ -129,4 +129,30 @@ export const store = reactive({
       },
     ],
   },
+  recent: [
+    {
+      img: '/6-recent/news-autocar-1.jpg',
+      caption: '06.07.2022 - Auto Car',
+      title: 'Why is BMW loved?',
+      body: 'BMWs have a different line with their designs and almost [...]',
+    },
+    {
+      img: '/6-recent/news-autocar-2.jpg',
+      caption: '06.07.2022 - Auto Car',
+      title: 'How solid is Audi?',
+      body: 'According to Euro NCAP data with different test organizations, there [...]',
+    },
+    {
+      img: '/6-recent/news-autocar-5.jpg',
+      caption: '06.07.2022 - Auto Car',
+      title: 'What brand is Skoda?',
+      body: 'Skoda is one of the leading automotive manufacturer of the [...]',
+    },
+    {
+      img: '/6-recent/news-autocar-6.jpg',
+      caption: '06.07.2022 - Auto Car',
+      title: 'Is the Auris diesel?',
+      body: 'You will have a quieter vehicle that burns less than [...]',
+    },
+  ],
 });

@@ -37,7 +37,7 @@ export default {
     color: $darkGrey-color;
     box-shadow: 0px 0px 4px 4px $shadow-color;
     width: calc(100% / 6);
-    border-radius: 2px;
+    border-radius: 4px;
     cursor: pointer;
 
     img {

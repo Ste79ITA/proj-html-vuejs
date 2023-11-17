@@ -50,14 +50,13 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  // height: 780px;
   margin-top: 26px;
   row-gap: 20px;
 
   .card {
     width: calc((100%) / 4);
     box-shadow: 0px 0px 4px 4px $shadow-color;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 14px 21px;
 
     .content {
