@@ -49,7 +49,6 @@ export default {
   flex-direction: column;
   align-items: center;
   background-color: $white-color;
-  // height: 781px;
 
   .title {
     @include flex;
@@ -78,6 +77,8 @@ export default {
       }
       p {
         padding-bottom: 19px;
+        font-weight: 100;
+        color: $darkGrey-color;
       }
     }
   }
@@ -109,12 +110,17 @@ export default {
         height: 100%;
         align-items: center;
         justify-content: start;
-        gap: 20px;
+        gap: 25px;
         padding: 0 28px;
-        margin-top: 10px;
+        margin-top: 17px;
 
         h2 {
           font-size: 22px;
+        }
+
+        p {
+          font-weight: 100;
+          color: $darkGrey-color;
         }
 
         .more {

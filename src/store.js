@@ -155,4 +155,26 @@ export const store = reactive({
       body: 'You will have a quieter vehicle that burns less than [...]',
     },
   ],
+  testimonials: [
+    {
+      body: 'We are a gallery vehicle dealer. Before we met this site, our sales were sluggish',
+      portrait: '/5-testimonials/testimonial-1.png',
+      name: 'Adam',
+    },
+    {
+      body: 'One of the quality websites i apply to rent a car. There are hundreds of different tools.',
+      portrait: '/5-testimonials/testimonial-2.png',
+      name: 'Cristian',
+    },
+    {
+      body: 'I was trying to sell my car. And i put it here and sold it for more than it was worth.',
+      portrait: '/5-testimonials/testimonial-3.png',
+      name: 'Robert',
+    },
+    {
+      body: 'A fast and reliable vehicle selling site. Rare quality website with hundreds of model vehicles.',
+      portrait: '/5-testimonials/testimonial-4.png',
+      name: 'Elizabeth',
+    },
+  ],
 });
